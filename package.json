@@ -1,0 +1,22 @@
+{
+  "name": "ms_assignment",
+  "version": "1.0.0",
+  "description": "UI Assignment",
+  "main": "src/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uidev3594/assignment_ms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uidev3594/assignment_ms/issues"
+  },
+  "homepage": "https://github.com/uidev3594/assignment_ms#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
