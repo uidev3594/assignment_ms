@@ -3,7 +3,13 @@
   font-size: 12px; }
 
 a {
-  color: #acacac; }
+  color: #a3a3a3;
+  cursor: pointer; }
+
+button, input[type="submit"] {
+  color: #eaeae9;
+  background-color: #636562;
+  cursor: pointer; }
 
 .header .navbar {
   background-color: #c30931; }
@@ -18,13 +24,23 @@ a {
     .header .navbar {
       min-height: 40px; } }
 
-.header .header_iteam--search li.first-child {
-  padding: 2rem 0.5rem;
-  background: #c30832;
-  position: relative;
-  top: -2rem; }
-  .header .header_iteam--search li.first-child a {
-    color: #fff; }
+.header .header_iteam--search {
+  background-color: #f4f4f4; }
+  .header .header_iteam--search li.first-child {
+    padding: 3rem 0.5rem;
+    background: #c30832;
+    position: relative;
+    top: -3rem; }
+    .header .header_iteam--search li.first-child a {
+      color: #fff; }
+  @media (max-width: 767px) {
+    .header .header_iteam--search form.mb-form {
+      width: 100%; } }
+
+.header .header_iteam--share {
+  background-color: #f0f0f0; }
+  .header .header_iteam--share li a span {
+    font-size: 10px; }
 
 .hero_section {
   background-image: url(../assests/team.png);
@@ -34,16 +50,16 @@ a {
   .hero_section .pt-6 {
     padding-top: 15rem; }
   .hero_section .hero_section--row {
-    background-color: #6a6c69; }
+    background-color: #636562; }
     .hero_section .hero_section--row .child-1 {
-      border-right: 1px solid #acacac; }
+      border-right: 1px solid #a3a3a3; }
     .hero_section .hero_section--row h1, .hero_section .hero_section--row p {
-      color: #e8e8e8;
+      color: #eaeae9;
       font-weight: lighter; }
 
 .information_section {
   background-color: #f4f4f4;
-  color: #acacac; }
+  color: #a3a3a3; }
   .information_section h2.text-uppercase--subheading {
     font-weight: 400; }
   .information_section .information {
@@ -59,12 +75,54 @@ a {
 
 .resources_section .resources_section--tabSection {
   background-color: #363636; }
+  .resources_section .resources_section--tabSection .nav-pills .quality {
+    background-color: #219fd7;
+    border-radius: 0; }
+    .resources_section .resources_section--tabSection .nav-pills .quality.active {
+      box-shadow: 0 4px 0 0 #363636, 0 12px 0 0 #219fd7; }
+    @media (max-width: 767px) {
+      .resources_section .resources_section--tabSection .nav-pills .quality {
+        margin-right: 0px !important; } }
+  .resources_section .resources_section--tabSection .nav-pills .conimentum {
+    background-color: #4c5b70;
+    border-radius: 0; }
+    .resources_section .resources_section--tabSection .nav-pills .conimentum.active {
+      box-shadow: 0 4px 0 0 #363636, 0 12px 0 0 #4c5b70; }
+    @media (max-width: 767px) {
+      .resources_section .resources_section--tabSection .nav-pills .conimentum {
+        margin-right: 0px !important; } }
+  .resources_section .resources_section--tabSection .nav-pills .maecenas {
+    background-color: #d79561;
+    border-radius: 0; }
+    .resources_section .resources_section--tabSection .nav-pills .maecenas.active {
+      box-shadow: 0 4px 0 0 #363636, 0 12px 0 0 #d79561; }
+    @media (max-width: 767px) {
+      .resources_section .resources_section--tabSection .nav-pills .maecenas {
+        margin-right: 0px !important; } }
+  .resources_section .resources_section--tabSection .nav-pills .suspendisse {
+    background-color: #c85b5e;
+    border-radius: 0; }
+    .resources_section .resources_section--tabSection .nav-pills .suspendisse.active {
+      box-shadow: 0 4px 0 0 #363636, 0 12px 0 0 #c85b5e; }
+    @media (max-width: 767px) {
+      .resources_section .resources_section--tabSection .nav-pills .suspendisse {
+        margin-right: 0px !important; } }
   .resources_section .resources_section--tabSection .tab-content .tab-pane {
     background-color: #3b3b3b;
-    color: #b5b5b5; }
+    color: #a0a0a0; }
+    .resources_section .resources_section--tabSection .tab-content .tab-pane#quality-report {
+      border-top: 2px solid #219fd7; }
+    .resources_section .resources_section--tabSection .tab-content .tab-pane#conimentum-porttior {
+      border-top: 2px solid #4c5b70; }
+    .resources_section .resources_section--tabSection .tab-content .tab-pane#maecenas-tincidunt {
+      border-top: 2px solid #d79561; }
+    .resources_section .resources_section--tabSection .tab-content .tab-pane#suspendisse-quis {
+      border-top: 2px solid #c85b5e; }
 
 .experts_section {
   background-color: #f4f4f4; }
+  .experts_section .experts_section--container {
+    border-bottom: 2px solid #eaeaea; }
   .experts_section .card-img-top {
     min-height: 155px; }
   .experts_section .card-title {
@@ -72,6 +130,10 @@ a {
 
 .connect_section {
   background-color: #f4f4f4; }
+  .connect_section .dropdown-toggle::after {
+    position: absolute;
+    right: 10px;
+    top: 10px; }
 
 .footer {
   background-color: #363636; }

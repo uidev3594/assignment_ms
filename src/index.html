@@ -19,12 +19,12 @@
   <!-- Header-section -->
 <header class="header">
   <div class="header_iteam--menu">
-      <nav class="navbar navbar-toggleable-md navbar-light">
+      <nav class="navbar navbar-toggleable-md navbar-light p-0">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse header_iteam--left" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav mr-auto pt-3">
             <li class="nav-item active">
               <a class="nav-link text-uppercase" id="nav-link" href="#">About us <span class="sr-only">(current)</span></a>
             </li>
@@ -44,38 +44,73 @@
 
           <span class="navbar-text header_iteam--right">
             <span id="nav-link">Marrit Roma</span>
+            <img src="assests/roma.png" class="img-fluid" alt="Profile name">
           </span>
         </div>
       </nav>
   </div>
 
-  <div class="header_iteam--share bg-secondary p-3 clearfix">
+  <div class="header_iteam--share p-2 clearfix">
     <div class="float-right">
+      <ul class="d-flex list-unstyled m-0">
+        <li class="px-2">
+          <a href="#">
+            <span>
+                <i class="fa fa-align-center" aria-hidden="true"></i>
+            </span>
+          </a>
+        </li>
+        <li class="px-2">
+          <a href="#">
+              <span>
+                  <i class="fa fa-share-alt" aria-hidden="true"></i>
+                  <span class="text-uppercase">share</span>
+              </span>
+          </a>
+        </li>
+        <li class="px-2">
+          <a href="#">
+           <span>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <span class="text-uppercase">follow</span>
+           </span>
+          </a>
+        </li>
+        <li class="px-2">
+          <a href="#">
+           <span>
+              <i class="fa fa-window-maximize" aria-hidden="true"></i>
+           </span>
+          </a>
+        </li>
+      </ul>
         <span></span>
-        <span class="text-uppercase">share</span>
-        <span class="text-uppercase">follow</span>
+
+
         <span></span>
     </div>
   </div>
 
-  <div class="header_iteam--search container">
-        <div class="row clearfix">
-            <div class="col-12 col-md-6 float-left">
-                <ul class="p-0">
-                  <li class="text-uppercase d-inline first-child mr-5">
-                    <a href="" class="p-1">Contoso</a>
-                  </li>
-                  <li class="text-uppercase d-inline">
-                      <a href="" class="p-1">Services \ IT</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-12 col-md-6">
-                  <form class="form-inline float-right col-xs-12 p-0">
-                      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                  </form>
-              </div>
-        </div>
+  <div class="header_iteam--search pt-4">
+       <div class="container">
+          <div class="row clearfix">
+              <div class="col-12 col-md-6 float-left">
+                  <ul class="p-0">
+                    <li class="text-uppercase d-inline first-child mr-5">
+                      <a href="" class="p-1">Contoso</a>
+                    </li>
+                    <li class="text-uppercase d-inline">
+                        <a href="" class="p-1">Services \ IT</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-12 col-md-6">
+                    <form class="form-inline float-right col-xs-12 p-0 mb-form">
+                        <input class="form-control mr-sm-2 w-100" type="text" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+          </div>
+       </div>
   </div>
 
 </header>
@@ -93,7 +128,7 @@
               </div>
               <div class="col-12 col-md-6">
                 <div class="row">
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-md-3 my-3">
                         <img src="assests/pavan.jpg" class="img-fluid" alt="Pavan NVR">
                     </div>
                     <p class="col-12 col-md-9 align-self-center">
@@ -131,145 +166,91 @@
   <section class="key_resources">
       <h2 class="text-uppercase container mb-0 py-3">key resources</h2>
   </section>
-  <!-- <section class="resources_section">
-    <div class="resources_section--tabSection">
-        <div class="container">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active px-4 py-3" id="quality-report" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-expanded="true">Quality Report 2017</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link px-4 py-3" id="conimentum-porttior" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">Conimentum porttior</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-4 py-3" id="maecenas-tincidunt" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">Maecenas tincidunt</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-4 py-3" id="suspendisse-quis" data-toggle="tab" href="#profile" role="tab" aria-controls="profile">Suspendisse quis</a>
-                </li>
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active px-4 py-3" id="home" role="tabpanel" aria-labelledby="quality-report">
-                    <time> 26 SEPT 2017 </time>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </p>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </p>
-                    <button class="p-3 mr-3">Download Report 2017</button>
-                    <span>Share this document</span>
-                </div>
-                <div class="tab-pane fade px-4 py-3" id="profile" role="tabpanel" aria-labelledby="conimentum-porttior">
-                    <time> 26 SEPT 2017 </time>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </p>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </p>
-                    <button class="p-3 mr-3">Download Report 2017</button>
-                    <span>Share this document</span>
-                </div>
-                <div class="tab-pane fade px-4 py-3" id="profile" role="tabpanel" aria-labelledby="maecenas-tincidunt">
-                    <time> 26 SEPT 2017 </time>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </p>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </p>
-                    <button class="p-3 mr-3">Download Report 2017</button>
-                    <span>Share this document</span>
-                </div>
-                <div class="tab-pane fade px-4 py-3" id="profile" role="tabpanel" aria-labelledby="suspendisse-quis">
-                    <time> 26 SEPT 2017 </time>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </p>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </p>
-                    <button class="p-3 mr-3">Download Report 2017</button>
-                    <span>Share this document</span>
-                </div>
-              </div>
-        </div>
-    </div>
-  </section> -->
 
   <section class="resources_section">
       <div class="resources_section--tabSection">
           <div class="container">
-              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active" id="quality-report-tab" data-toggle="pill" href="#quality-report" role="tab" aria-controls="quality-report" aria-expanded="true">Quality Report 2017</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="conimentum-porttior-tab" data-toggle="pill" href="#conimentum-porttior" role="tab" aria-controls="conimentum-porttior" aria-expanded="true">Conimentum porttior</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" id="maecenas-tincidunt-tab" data-toggle="pill" href="#maecenas-tincidunt" role="tab" aria-controls="maecenas-tincidunt" aria-expanded="true">Maecenas tincidunt</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" id="suspendisse-quis-tab" data-toggle="pill" href="#suspendisse-quis" role="tab" aria-controls="suspendisse-quis" aria-expanded="true">Suspendisse quis</a>
-                  </li>
-                </ul>
-                <div class="tab-content" id="pills-tabContent">
-                  <div class="tab-pane fade show active" id="quality-report" role="tabpanel" aria-labelledby="quality-report">
-                      <time> 26 SEPT 2017 </time>
-                      <p>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                      </p>
-                      <p>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                      </p>
-                      <button class="p-3 mr-3">Download Report 2017</button>
-                      <span>Share this document</span>
-                  </div>
+                <ul class="nav nav-pills nav-justified mb-3 row m-0" id="pills-tab" role="tablist">
+                    <li class="nav-item col-xs-6 col-md-3 p-0">
+                      <a class="nav-link quality mr-2 py-4" id="quality-report-tab" data-toggle="pill" href="#quality-report" role="tab" aria-controls="quality-report" aria-expanded="true">Quality Report 2017</a>
+                    </li>
+                    <li class="nav-item col-xs-6 col-md-3 p-0">
+                      <a class="nav-link conimentum mr-2 py-4" id="conimentum-porttior-tab" data-toggle="pill" href="#conimentum-porttior" role="tab" aria-controls="conimentum-porttior" aria-expanded="true">Conimentum porttior</a>
+                    </li>
+                    <li class="nav-item col-xs-6 col-md-3 p-0">
+                        <a class="nav-link maecenas mr-2 py-4" id="maecenas-tincidunt-tab" data-toggle="pill" href="#maecenas-tincidunt" role="tab" aria-controls="maecenas-tincidunt" aria-expanded="true">Maecenas tincidunt</a>
+                    </li>
+                    <li class="nav-item col-xs-6 col-md-3 p-0">
+                        <a class="nav-link suspendisse py-4" id="suspendisse-quis-tab" data-toggle="pill" href="#suspendisse-quis" role="tab" aria-controls="suspendisse-quis" aria-expanded="true">Suspendisse quis</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active px-5 py-4" id="quality-report" role="tabpanel" aria-labelledby="quality-report-tab">
+                        <time> 26 SEPT 2017 </time>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <button class="p-3 mr-3 border-0">Download Report 2017</button>
+                        <span class="col-xs-12 d-inline-block pt-3">
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            <span>Share this document</span>
+                        </span>
+                    </div>
 
-                  <div class="tab-pane fade" id="conimentum-porttior" role="tabpanel" aria-labelledby="conimentum-porttior">
-                      <time> 26 SEPT 2017 </time>
-                      <p>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                      </p>
-                      <p>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                      </p>
-                      <button class="p-3 mr-3">Download Report 2017</button>
-                      <span>Share this document</span>
-                  </div>
+                    <div class="tab-pane fade px-5 py-4" id="conimentum-porttior" role="tabpanel" aria-labelledby="conimentum-porttior-tab">
+                        <time> 26 SEPT 2017 </time>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <button class="p-3 mr-3 border-0">Download Report 2017</button>
+                        <span class="col-xs-12 d-inline-block pt-3">
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            <span>Share this document</span>
+                        </span>
+                    </div>
 
-                  <div class="tab-pane fade show active" id="maecenas-tincidunt" role="tabpanel" aria-labelledby="maecenas-tincidunt">
-                      <time> 26 SEPT 2017 </time>
-                      <p>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                      </p>
-                      <p>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                      </p>
-                      <button class="p-3 mr-3">Download Report 2017</button>
-                      <span>Share this document</span>
-                  </div>
+                    <div class="tab-pane fade px-5 py-4" id="maecenas-tincidunt" role="tabpanel" aria-labelledby="maecenas-tincidunt-tab">
+                        <time> 26 SEPT 2017 </time>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <button class="p-3 mr-3 border-0">Download Report 2017</button>
+                        <span class="col-xs-12 d-inline-block pt-3">
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            <span>Share this document</span>
+                        </span>
+                    </div>
 
-                  <div class="tab-pane fade" id="suspendisse-quis" role="tabpanel" aria-labelledby="suspendisse-quis">
-                      <time> 26 SEPT 2017 </time>
-                      <p>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                      </p>
-                      <p>
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                      </p>
-                      <button class="p-3 mr-3">Download Report 2017</button>
-                      <span>Share this document</span>
+                    <div class="tab-pane fade px-5 py-4" id="suspendisse-quis" role="tabpanel" aria-labelledby="suspendisse-quis-tab">
+                        <time> 26 SEPT 2017 </time>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <button class="p-3 mr-3 border-0">Download Report 2017</button>
+                        <span class="col-xs-12 d-inline-block pt-3">
+                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                            <span>Share this document</span>
+                        </span>
+                    </div>
                   </div>
-                </div>
           </div>
       </div>
   </section>
 
   <section class="experts_section">
-      <div class="container py-5">
+      <div class="container py-5 experts_section--container">
           <h2 class="text-uppercase">our exports</h2>
           <div class="row m-0">
               <div class="col-12 col-sm-6 col-md-4 col-lg-2 p-2">
@@ -335,11 +316,31 @@
       </div>
   </section>
 
-  <section class="connect_section container">
-      <h2 class="text-uppercase">lets connect</h2>
-      <div class="connect_section--form">
+  <section class="connect_section pt-4">
+    <div class="container">
+      <h2 class="text-uppercase mb-0 py-4">lets connect</h2>
+          <div class="row">
+              <div class="connect_section--form col-xs-12 col-md-5">
+                  <div class="dropdown">
+                      <a class="btn btn-secondary dropdown-toggle col-12 text-left rounded-0 border-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Select topic
+                      </a>
 
-      </div>
+                      <div class="dropdown-menu col-12" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                  </div>
+
+                  <div class="py-4">
+                        <textarea rows="4" cols="50" class="col-12 border-0 p-3" placeholder="Describe yourself here..."></textarea>
+                  </div>
+
+                  <input type="submit" class="mb-4 px-5 py-3">
+              </div>
+          </div>
+    </div>
   </section>
 </main>
 <!-- Main section End-->
