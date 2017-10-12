@@ -15,9 +15,9 @@ $bg-share:#f0f0f0;
     $bg-suspendisse:#c85b5e;
 
 // font color
-$text-color:#a3a3a3;
+$text-color:#707070;
 $text-litecolor:#eaeae9;
-$text-color-smokewhite:#a0a0a0;
+$text-color-smokewhite:#A6A6A6;
 
 // font weight
 $font-lite:lighter;
@@ -26,16 +26,22 @@ $font-lite:lighter;
 *{
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
+  color: $text-color;
 }
+
 a{
   color:$text-color;
   cursor: pointer;
+  text-decoration: none;
 }
+
 button, input[type="submit"]{
-color:$text-litecolor;
-background-color: $bg-grey;
-cursor: pointer;
+    background-color: $bg-grey;
+    cursor: pointer;
+    color: $text-litecolor;
 }
+
+
 .header{
 
   .navbar{
@@ -45,17 +51,30 @@ cursor: pointer;
       outline:0;
       cursor:pointer;
     }
-    // .navbar-nav{
-    //   margin-left: 15.5rem;
-    // }
+    .navbar-nav{
+      margin-left: 16.5rem;
+    }
 
     #nav-link{
-      color:#f5f5f5;
+      color:$text-litecolor;
       font-size:10px;
       font-weight:$font-lite;
+
+      &:hover{
+        color: #ffffff;
+        font-weight: bold;
+      }
     }
-    @media(max-width:767px) {
+    @media(max-width:991px) {
         min-height:40px;
+
+        .header_iteam--left{
+          padding: 2rem;
+
+        .navbar-nav{
+          margin-left: unset;
+        }
+      }
     }
   }
 
@@ -72,10 +91,18 @@ cursor: pointer;
         color: #fff;
       }
     }
-
+    .services-it{
+      font-size: 1.5rem;
+      font-weight: $font-lite;
+    }
+    .fa-search{
+      position: absolute;
+      right: 2rem;
+    }
     @media(max-width:767px){
         form.mb-form{
           width: 100%;
+          margin-bottom:15px;
         }
      }
   }
@@ -107,12 +134,18 @@ cursor: pointer;
     background-color: $bg-grey;
 
       .child-1{
-        border-right:1px solid $text-color;
+        border-right:1px solid $text-color-smokewhite;
       }
       h1, p{
         color: $text-litecolor;
         font-weight: $font-lite;
       }
+  }
+
+  .container{
+    @media(max-width:767px){
+      padding:1rem;
+    }
   }
 }
 
@@ -148,6 +181,7 @@ cursor: pointer;
             .quality{
               background-color: $bg-quality;
               border-radius: 0;
+              color: $text-litecolor;
               &.active{
                 box-shadow: 0 4px 0 0 $bg-darkgrey, 0 12px 0 0 $bg-quality;
               }
@@ -158,6 +192,7 @@ cursor: pointer;
             .conimentum{
               background-color: $bg-conimentum;
               border-radius: 0;
+              color: $text-litecolor;
               &.active{
                 box-shadow: 0 4px 0 0 $bg-darkgrey, 0 12px 0 0 $bg-conimentum;
               }
@@ -169,6 +204,7 @@ cursor: pointer;
             .maecenas{
               background-color: $bg-maecenas;
               border-radius: 0;
+              color: $text-litecolor;
               &.active{
                 box-shadow: 0 4px 0 0 $bg-darkgrey, 0 12px 0 0 $bg-maecenas;
               }
@@ -180,6 +216,7 @@ cursor: pointer;
             .suspendisse{
               background-color: $bg-suspendisse;
               border-radius: 0;
+              color: $text-litecolor;
               &.active{
                 box-shadow: 0 4px 0 0 $bg-darkgrey, 0 12px 0 0 $bg-suspendisse;
               }
@@ -193,7 +230,7 @@ cursor: pointer;
     .tab-content{
       .tab-pane{
               background-color: $bg-mdgrey;
-              color: $text-color-smokewhite;
+
 
               &#quality-report{
                 border-top:2px solid $bg-quality;
@@ -209,6 +246,14 @@ cursor: pointer;
 
               &#suspendisse-quis{
                 border-top:2px solid $bg-suspendisse;
+              }
+
+              p, time, button, span{
+                color: $text-color-smokewhite;
+              }
+
+              button{
+                color: $text-litecolor;
               }
             }
     }
@@ -226,7 +271,11 @@ cursor: pointer;
         min-height:155px;
       }
       .card-title{
-        font-weight: $font-lite;
+        // font-weight: $font-lite;
+        color:#878787;
+      }
+      .card-text{
+        color: $text-color;
       }
 }
 
@@ -238,8 +287,22 @@ cursor: pointer;
         right: 10px;
         top:10px;
       }
+      .btn-secondary {
+        color:unset;
+      }
 }
 
 .footer{
   background-color: $bg-darkgrey;
+  a{
+    text-decoration: none;
+    &:hover{
+      font-weight:300;
+      color:#ffffff;
+    }
+  }
+  .poweredBy{
+    color:$text-color-smokewhite;
+  }
+
 }
